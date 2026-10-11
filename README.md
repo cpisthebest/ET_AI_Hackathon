@@ -54,7 +54,11 @@ docker compose up --build
 API: http://localhost:8000/docs
 UI: http://localhost:8501
 
-The first startup may download the embedding model. The demo ingestion script ingests regulation, control and evidence PDFs into one SourceDocument/chunk/vector layer and links them to their domain entities. Ollama models are pulled separately:
+The first startup will create database tables and then download the embedding model. The demo ingestion script ingests regulation, control and evidence PDFs into one SourceDocument/chunk/vector layer and links them to their domain entities. Ollama models are pulled separately:
+
+```bash
+docker exec -it compliance_api alembic upgrade head
+```
 
 ```bash
 docker exec -it compliance_ollama ollama pull llama3.1:8b
