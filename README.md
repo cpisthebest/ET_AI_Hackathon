@@ -79,7 +79,7 @@ python -m scripts.ingest_demo
 Run the assessment:
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/assessments/demo
+curl -X POST http://localhost:8000/api/v1/assessments
 ```
 
 ## Production hardening
