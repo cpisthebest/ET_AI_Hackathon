@@ -30,6 +30,8 @@ Production-oriented reference implementation for continuously tracing:
 
 ## Demo scenario
 
+[▶ Watch Demo](./compliance_pipeline_walkthrough_with_steps.mp4)
+
 `mock_regulation_2025.pdf` says:
 1. Access reviews are annual.
 2. Records are retained for 3 years.
